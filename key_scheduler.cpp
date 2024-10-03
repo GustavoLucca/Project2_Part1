@@ -30,7 +30,7 @@ vector<string> key_gen(string key){
     string subKey;
 
     for (int i = 0; i < 16; i++) {
-        for (int j = 0; j < shiftsLookup[i]; i++) {
+        for (int j = 0; j < shiftsLookup[i]; j++) {
             leftHalf = shift_left(leftHalf);
             rightHalf = shift_left(rightHalf);
         }
@@ -38,7 +38,7 @@ vector<string> key_gen(string key){
         subKey = "";
         for (int j = 0; j < 48; j++) {
             // PC2
-            subKey += combinedKey[PC2[i] - 1];
+            subKey += combinedKey[PC2[j] - 1];
         }
         sub_keys.push_back(subKey);
     } 
