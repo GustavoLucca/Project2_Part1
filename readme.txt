@@ -19,3 +19,10 @@ The expected 16 keys:
 100111011011101010110111100100101001101100110001
 101101110011111011111010010100110010111100110100
 011000001111101110011111100001001101001011000111
+
+on our edited 'key_scheduler.cpp', we end up getting our expected 16 keys.
+
+This was done by using PC1 and PC2 for shift lookups found in 'key_utils.h'
+Otherwise, we used all references attached to accurately reflect the DES key scheduler
+
+In this project, Pascal Sikorski and Gustavo Lucca worked together.
